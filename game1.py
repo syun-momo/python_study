@@ -1,6 +1,6 @@
-form game import *
+from game import *
 
-image_player = image('')
+image_player = image('ddpoke.png')
 
 def player(p):
     p.x += p.vx
@@ -8,4 +8,4 @@ def player(p):
 def start():
     add(player, image_player, 0.1, -1.1, 0, 0.01, 0)
 
-run(start,1280,720)
+run(start, 1280, 720)
