@@ -10,6 +10,6 @@ def player(p):
 
 # ゲームの開始処理
 def start():
-    add(player, image_player, 0.1, -1.1, 0, 0.01, 0)
+    add(player, image_player, 0.1, 1.1, 0, -0.01, 0)
 
 run(start, 1280, 720)
