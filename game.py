@@ -20,6 +20,7 @@ def on_draw():
         snl.font_size = window.height//30
         snl.draw()
         sbl = score_best_label
+        sbl.text = f'Best {score_best:08d}'
         sbl.font_size = window.height//30
         sbl.x = window.width
         sbl.draw()
