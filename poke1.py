@@ -6,10 +6,18 @@ image_player = image('ddpoke.png')
 
 # 自機の処理
 def player(p):
-    p.x += p.vx
+    v = 0.01
+    if key(LEFT):
+        p.x -= v
+    if key(RIGHT):
+        p.x += v
+    if key(UP):
+        p.y += v
+    if key(DOWN):
+        p.y -= v
 
 # ゲームの開始処理
 def start():
-    add(player, image_player, 0.1, 1.1, 0, -0.01, 0)
+    add(player, image_player, 0.1)
 
 run(start, 1280, 720)
