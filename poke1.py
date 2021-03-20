@@ -6,7 +6,9 @@ image_player = image('ddpoke.png')
 
 # 自機の処理
 def player(p):
+    # 自機の移動速度
     v = 0.01
+    # 自機移動処理
     if key(LEFT):
         p.x -= v
     if key(RIGHT):
