@@ -30,7 +30,7 @@ def player(p):
     # 自機とボールの衝突判定
     #全てのボールに対して順に処理を行う
     for e in group(enemy):
-        if math.dist((p.x, p.y), (e.x, e.y)) < (p.sx+e.sx)*0.5:
+        if math.dist((p.x, p.y), (e.x, e.y)) < (p.sx+e.sx)*1:
             new_crash(p.x, p.y, 0.01, 20, 0.98)
             p.life = 0
 
