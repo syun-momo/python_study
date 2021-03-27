@@ -5,8 +5,8 @@ import math
 import random
 
 # 画像の読み込みpoke
-image_player = image('poke.png')
-image_enemy = image('ball.png')
+image_player = image('lion1.gif')
+image_enemy = image('ball2.png')
 
 #　画面のサイズ
 SW, SH = 1, 9/16
